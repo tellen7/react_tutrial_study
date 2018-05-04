@@ -1,4 +1,4 @@
-### react tutorial ###
+## react tutorial ##
 
 学习react组建开发
 
@@ -9,7 +9,7 @@ React 涉及的主要概念：
 - Virtual  DOM
 - Data Flow
 
-*JSX*
+**JSX**
 
 React 允许将 HTML 代码直接嵌入到 JS 代码中，对于长久以来一直被"表现与逻辑分离"的思想洗脑，要接受这种代码的书写方需要一定的过程，而一旦熟悉了这种在 JS 中支持 HTML 的写法，就会发现 JSX 的聪明之处。
 
@@ -20,11 +20,11 @@ React 允许将 HTML 代码直接嵌入到 JS 代码中，对于长久以来一�
 JS 表达式：组件属性中使用表达式，要用 {} 替换 " " ，同时在 JSX 进行注释要用 {} 包起来。
 
 
- *Virtual DOM*
+ **Virtual DOM**
 
 当组件状态 state 有更改的时候，React 会自动调用组件的 render 方法重新渲染整个组件的 UI。但是如此大规模地操作 DOM ，会对性能造成很大的影响，因此 React 实现了一个 Virtual DOM，在 这个Virtual DOM 实现了一个 diff 算法，当 state 变化时，便通过 diff 寻找需要更新的节点，再把这个修改更新到浏览器的 DOM 节点上，相当于实现了局部的更新，在性能上比原生的 DOM 要快许多。
 
-*核心思想：封装组件*
+**核心思想：封装组件**
 
 React 十分强调组件的概念，对于所有功能独立的模块都可以抽离成组件，然后在需要的地方 import ，降低了代码之间的耦合性，并且方便维护。
 
@@ -49,6 +49,6 @@ componentDidUpdate
 componentWillUnmount
 
 
-*Data Flow*
+**Data Flow**
 
 React 的架构方式是单向的数据绑定，在之前的开放过程中没有直接使用到这个功能，但是 Ant Design 组件已经封装好了大量的具有数据绑定功能的组件，因此使用起来也十分方便，在之后的项目中，随着应用的逐步扩大和复杂，单向数据绑定会变得十分实用。
